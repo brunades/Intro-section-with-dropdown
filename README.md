@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/brunades/Intro-section-with-dropdown]
-- Live Site URL: [https://intro-section-with-dropdown-brunades.netlify.app/]
+- [Solution URL](https://github.com/brunades/Intro-section-with-dropdown)
+- [Live Site URL](https://intro-section-with-dropdown-brunades.netlify.app/)
 
 ## My process
 
