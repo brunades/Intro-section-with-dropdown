@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="snap-logo">
+        </a>
+      </div>
+
+      <ul class="navbar-nav-left">
+        <li>
+          <a id="features" href="#">Features 
+            <img class="icon-arrow-down" src="img/icon-arrow-down.svg" alt="">
+            <img class="icon-arrow-up hidden" src="img/icon-arrow-up.svg" alt=""></a>
+          <ul class="dropdown hidden">
+            <li><a href="#"><img src="img/icon-todo.svg" alt="">Todo List</a></li>
+            <li><a href="#"><img src="img/icon-calendar.svg" alt="">Calendar</a></li>
+            <li><a href="#"><img src="img/icon-reminders.svg" alt="">Reminders</a></li>
+            <li><a href="#"><img src="img/icon-planning.svg" alt="">Planning</a></li>
+          </ul>
+        </li>
+        <li><a id="company" href="#">Company 
+          <img class="icon-arrow-down" src="img/icon-arrow-down.svg" alt="">
+          <img class="icon-arrow-up hidden" src="img/icon-arrow-up.svg" alt=""></a>
+          <ul class="dropdown hidden">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul class="navbar-nav-right">
+        <li><button class="btn btn-no-outline">Login</button></li>
+        <li><button class="btn btn-outline">Register</button></li>
+      </ul>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger-container">
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden" id="menu">
+    <ul class="navbar-nav-left">
+      <li>
+        <a id="mobile-features" href="#">Features 
+          <img class="icon-arrow-down" src="img/icon-arrow-down.svg" alt="">
+          <img class="icon-arrow-up hidden" src="img/icon-arrow-up.svg" alt=""></a>
+        <ul id="features-dropdown" class="mobile-dropdown hidden">
+          <li><a href="#"><img src="img/icon-todo.svg" alt="">Todo List</a></li>
+          <li><a href="#"><img src="img/icon-calendar.svg" alt="">Calendar</a></li>
+          <li><a href="#"><img src="img/icon-reminders.svg" alt="">Reminders</a></li>
+          <li><a href="#"><img src="img/icon-planning.svg" alt="">Planning</a></li>
+        </ul>
+      </li>
+      <li><a id="mobile-company" href="#">Company 
+        <img class="icon-arrow-down" src="img/icon-arrow-down.svg" alt="">
+        <img class="icon-arrow-up hidden" src="img/icon-arrow-up.svg" alt=""></a>
+        <ul id="company-dropdown" class="mobile-dropdown hidden">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container grid-col-2">
+      <div class="hero-text">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,create team rituals, and watch productivity
+          soar.</p>
+        <button class="btn btn-dark">Learn more</button>
+      </div>
+      <div class="img">
+        <img src="img/image-hero-desktop.png" alt="hero-section">
+      </div>
+      <div class="img-mobile hidden">
+        <img src="img/image-hero-mobile.png" alt="hero-section-mobile">
+      </div>
+      <div class="clients">
+        <a href="#"><img src="img/client-databiz.svg" alt=""></a>
+        <a href="#"><img src="img/client-audiophile.svg" alt=""></a>
+        <a href="#"><img src="img/client-meet.svg" alt=""></a>
+        <a href="#"><img src="img/client-maker.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/brunades">brunades</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
