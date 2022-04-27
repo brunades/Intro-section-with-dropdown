@@ -240,6 +240,13 @@ p {
 .hero-container .hero-text h1 {
   width: 75%;
   font-size: 4rem;
+  animation: hero-text-h1 2s forwards;
+}
+
+@keyframes hero-text-h1 {
+  0% {transform: translateY(-1000px); opacity: 0;}
+  50% {opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
 }
 
 .hero-container .hero-text p {
@@ -247,17 +254,38 @@ p {
   line-height: 1.5;
   margin-top: 40px;
   color: var(--medium-gray);
+  animation: hero-text-p 2s forwards;
+}
+
+@keyframes hero-text-p {
+  0% {transform: translateX(-1000px); opacity: 0;}
+  50% {opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
 }
 
 .hero-container .hero-text button {
   margin-top: 40px;
   font-size: 15px;
   padding: 12px 20px;
+  opacity: 0;
+  animation: hero-text-btn 2s 2s forwards;
+}
+
+@keyframes hero-text-btn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .hero-container .img {
   grid-column: 2;
   grid-row: 1 / 6;
+  animation: hero-img 2s forwards;
+}
+
+@keyframes hero-img {
+  0% {transform: translateX(2000px); opacity: 0;}
+  50% {opacity: 0;}
+  100% {transform: translateX(0); opacity: 1;}
 }
 
 .hero-container .clients {
@@ -267,6 +295,13 @@ p {
   justify-self: flex-start;
   align-self: flex-end;
   gap: 20px;
+  animation: hero-clients 2s forwards;
+}
+
+@keyframes hero-clients {
+  0% {transform: translateY(2000px); opacity: 0;}
+  50% {opacity: 0;}
+  100% {transform: translateY(0); opacity: 1;}
 }
 
 .hero-container .clients a {
@@ -318,7 +353,7 @@ p {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:375px) {
   .navbar-container {
     margin: 20px 15px;
   }
@@ -351,6 +386,12 @@ p {
     margin-top: 40px;
   }
 
+  @keyframes hero-text-h1 {
+    0% {transform: translateX(-1000px); opacity: 0;}
+    50% {opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+  }
+
   .hero-container .hero-text p {
     width: 80%;
     margin: 0 auto;
@@ -372,6 +413,13 @@ p {
 
   .hero-container .img-mobile img {
     width: 100%;
+    animation: hero-img 2s forwards;
+  }
+
+  @keyframes hero-img {
+    0% {transform: translateY(-1000px); opacity: 0;}
+    50% {opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
   }
 
   .hero-container .clients {
