@@ -353,7 +353,8 @@ p {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:768px){
+
   .navbar-container {
     margin: 20px 15px;
   }
@@ -423,7 +424,9 @@ p {
   }
 
   .hero-container .clients {
-    justify-self: center;
+    justify-self: unset;
+    justify-content: center;
     margin-top: 60px;
+    flex-wrap: wrap;
   }
 }
