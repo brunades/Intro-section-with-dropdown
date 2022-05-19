@@ -102,22 +102,22 @@ p {
   display: none;
 }
 
-.navbar-nav-left li #features:hover + ul,
-.navbar-nav-left li #features + ul:hover,
-.navbar-nav-left li #company:hover + ul,
-.navbar-nav-left li #company + ul:hover {
+.navbar li #features:hover + ul,
+.navbar li #features + ul:hover,
+.navbar li #company:hover + ul,
+.navbar li #company + ul:hover {
   display: block;
 }
 
-.navbar-nav-left li:hover .icon-arrow-down,
-.navbar-nav-left li #features:hover .icon-arrow-down,
-.navbar-nav-left li #company:hover .icon-arrow-down {
+.navbar li:hover .icon-arrow-down,
+.navbar li #features:hover .icon-arrow-down,
+.navbar li #company:hover .icon-arrow-down {
   display: none;
 }
 
-.navbar-nav-left li:hover .icon-arrow-up,
-.navbar-nav-left li #features:hover .icon-arrow-up,
-.navbar-nav-left li #company:hover .icon-arrow-up {
+.navbar li:hover .icon-arrow-up,
+.navbar li #features:hover .icon-arrow-up,
+.navbar li #company:hover .icon-arrow-up {
   display: inline;
 }
 
